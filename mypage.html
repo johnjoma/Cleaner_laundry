@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cleaner Laundry</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar is-fixed-top has-background-grey-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#home">
+                <svg width="297" height="68" viewBox="0 0 297 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M38.8984 43.9395C38.7402 45.293 38.2393 46.3389 37.3955 47.0771C36.5576 47.8096 35.4414 48.1758 34.0469 48.1758C32.5352 48.1758 31.3223 47.6338 30.4082 46.5498C29.5 45.4658 29.0459 44.0156 29.0459 42.1992V40.9688C29.0459 39.7793 29.2568 38.7334 29.6787 37.8311C30.1064 36.9287 30.71 36.2373 31.4893 35.7568C32.2686 35.2705 33.1709 35.0273 34.1963 35.0273C35.5557 35.0273 36.6455 35.4082 37.4658 36.1699C38.2861 36.9258 38.7637 37.9746 38.8984 39.3164H37.2021C37.0557 38.2969 36.7363 37.5586 36.2441 37.1016C35.7578 36.6445 35.0752 36.416 34.1963 36.416C33.1182 36.416 32.2715 36.8145 31.6562 37.6113C31.0469 38.4082 30.7422 39.542 30.7422 41.0127V42.252C30.7422 43.6406 31.0322 44.7451 31.6123 45.5654C32.1924 46.3857 33.0039 46.7959 34.0469 46.7959C34.9844 46.7959 35.7021 46.585 36.2002 46.1631C36.7041 45.7354 37.0381 44.9941 37.2021 43.9395H38.8984ZM42.9062 46.6201H48.9707V48H41.21V35.2031H42.9062V46.6201ZM58.1289 42.085H52.583V46.6201H59.0254V48H50.8955V35.2031H58.9375V36.5918H52.583V40.7051H58.1289V42.085ZM68.1924 44.6602H62.8311L61.627 48H59.8867L64.7734 35.2031H66.25L71.1455 48H69.4141L68.1924 44.6602ZM63.3408 43.2715H67.6914L65.5117 37.2861L63.3408 43.2715ZM82.7031 48H81.0068L74.5645 38.1387V48H72.8682V35.2031H74.5645L81.0244 45.1084V35.2031H82.7031V48ZM92.9336 42.085H87.3877V46.6201H93.8301V48H85.7002V35.2031H93.7422V36.5918H87.3877V40.7051H92.9336V42.085ZM100.624 42.8232H97.6182V48H95.9219V35.2031H100.158C101.6 35.2031 102.707 35.5312 103.48 36.1875C104.26 36.8438 104.649 37.7988 104.649 39.0527C104.649 39.8496 104.433 40.5439 103.999 41.1357C103.571 41.7275 102.974 42.1699 102.206 42.4629L105.212 47.8945V48H103.401L100.624 42.8232ZM97.6182 41.4434H100.211C101.049 41.4434 101.714 41.2266 102.206 40.793C102.704 40.3594 102.953 39.7793 102.953 39.0527C102.953 38.2617 102.716 37.6553 102.241 37.2334C101.772 36.8115 101.093 36.5977 100.202 36.5918H97.6182V41.4434ZM113.184 46.6201H119.248V48H111.487V35.2031H113.184V46.6201ZM128.415 44.6602H123.054L121.85 48H120.109L124.996 35.2031H126.473L131.368 48H129.637L128.415 44.6602ZM123.563 43.2715H127.914L125.734 37.2861L123.563 43.2715ZM141.941 35.2031V43.9043C141.936 45.1113 141.555 46.0986 140.799 46.8662C140.049 47.6338 139.029 48.0645 137.74 48.1582L137.292 48.1758C135.892 48.1758 134.775 47.7979 133.943 47.042C133.111 46.2861 132.689 45.2461 132.678 43.9219V35.2031H134.348V43.8691C134.348 44.7949 134.603 45.5156 135.112 46.0312C135.622 46.541 136.349 46.7959 137.292 46.7959C138.247 46.7959 138.977 46.541 139.48 46.0312C139.99 45.5215 140.245 44.8037 140.245 43.8779V35.2031H141.941ZM154.439 48H152.743L146.301 38.1387V48H144.604V35.2031H146.301L152.761 45.1084V35.2031H154.439V48ZM157.437 48V35.2031H161.049C162.162 35.2031 163.146 35.4492 164.002 35.9414C164.857 36.4336 165.517 37.1338 165.979 38.042C166.448 38.9502 166.686 39.9932 166.691 41.1709V41.9883C166.691 43.1953 166.457 44.2529 165.988 45.1611C165.525 46.0693 164.86 46.7666 163.993 47.2529C163.132 47.7393 162.127 47.9883 160.979 48H157.437ZM159.124 36.5918V46.6201H160.899C162.2 46.6201 163.211 46.2158 163.932 45.4072C164.658 44.5986 165.021 43.4473 165.021 41.9531V41.2061C165.021 39.7529 164.679 38.625 163.993 37.8223C163.313 37.0137 162.347 36.6035 161.093 36.5918H159.124ZM173.942 42.8232H170.937V48H169.24V35.2031H173.477C174.918 35.2031 176.025 35.5312 176.799 36.1875C177.578 36.8438 177.968 37.7988 177.968 39.0527C177.968 39.8496 177.751 40.5439 177.317 41.1357C176.89 41.7275 176.292 42.1699 175.524 42.4629L178.53 47.8945V48H176.72L173.942 42.8232ZM170.937 41.4434H173.529C174.367 41.4434 175.032 41.2266 175.524 40.793C176.022 40.3594 176.271 39.7793 176.271 39.0527C176.271 38.2617 176.034 37.6553 175.56 37.2334C175.091 36.8115 174.411 36.5977 173.521 36.5918H170.937V41.4434ZM183.821 41.6279L187.161 35.2031H189.077L184.665 43.2275V48H182.978V43.2275L178.565 35.2031H180.499L183.821 41.6279Z"
+                        fill="black" />
+                    <ellipse cx="204" cy="36.5" rx="10" ry="11.5" fill="#12F9B3" />
+                </svg>
+
+
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+
+            <div class="navbar-end">
+                <a href="#home" class="navbar-item">
+                    Home
+                </a>
+                <a href="#services" class="navbar-item">
+                    Our Services
+                </a>
+
+                <a href="#pricing" class="navbar-item">
+                    Pricing
+                </a>
+                <a href="#contacts" class="navbar-item">
+                    Contact us
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--Section-1-->
+    <section id="home" class="section-1">
+        <div class="columns">
+
+            <div class="column">
+
+                <div class="intro has-text-centered">
+                    <h1 class="is-uppercase has-text-weight-bold">Cleaner Laundry</h1>
+                    <p class="has-text-weight-medium">Get clean and shine. We focus on making you smell nice.</p>
+                    <br>
+                    <button class=" button is-primary">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="column">
+
+                <img class="hanger" src="images/hanger.png" alt="">
+
+            </div>
+
+
+
+        </div>
+
+
+        </div>
+
+    </section>
+    <!--Section-2-->
+    <section id="services" class="section-2">
+        <div class="title has-text-centered">
+            <h1 class="title has-text-info "> Our Services
+
+            </h1>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <header class="card-header has-background-primary  ">
+                        <p class="card-header-title has-text-white ">
+                            Dry Cleaning
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content has-text-centered">
+                            <img src="images/laundry.png" alt="">
+                        </div>
+                        <p>We didn’t come up with the phrase ‘environment friendly’, but come to think of it, maybe we
+                            should have.</p> <br>
+                        <p>With no hazardous chemicals in our portfolio, we work on a clean conscience, and put people
+                            and planet before profits, because you deserve better.</p> <br>
+                        <p>Just think of us as your personal assistant.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <header class="card-header has-background-primary">
+                        <p class="card-header-title has-text-white">
+                            Wash & Fold
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content has-text-centered">
+                            <img src="images/fashion.png" alt="">
+                        </div>
+                        <p>Busy? Is your laundry list for the weekend running over and laundry is the last thing on your
+                            mind? Don’t fret, we’ll take care of your clothes so that you can take care of everything
+                            else.</p><br>
+                        <p>Contact us and not only will we wash your clothes for you, we’ll go the extra mile and fold
+                            them, because who likes a half-done job?</p>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <header class="card-header has-background-primary">
+                        <p class="card-header-title has-text-white">
+                            Ironing/ Press
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content has-text-centered">
+                            <img src="images/iron-board.png" alt="">
+                        </div>
+                        <p>Nothing shouts ‘sharp’ like a freshly pressed shirt. It is the only way to announce ‘I have
+                            arrived.’ We iron out all the wrinkles, it’s almost as if we give you the shirt brand new.
+                        </p> <br>
+                        <p>Don’t stress, we’ll press your shirts, so you impress your boss.</p>
+                        <br><br><br><br>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <header class="card-header has-background-primary">
+                        <p class="card-header-title has-text-white">
+                            Repairs
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content has-text-centered">
+                            <img src="images/wrench.png" alt="">
+                        </div>
+                        <p>If it’s broke, let us fix it.</p>
+                        <br>
+                        <p>Whether it’s your favorite shirt, or your go-to-dress, we go the extra length to sew and
+                            patch them up to acute precision.</p> <br>
+                        <p>When we are done, they are as good as new!</p>
+                        <br><br><br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!--Section-3-->
+    <section id="pricing" class="section-3">
+        <div class="title">
+            <h1 class="title has-text-info has-text-centered"> pricing
+
+            </h1>
+        </div>
+
+        <div class="columns">
+
+
+            <div class="column">
+                <div class="card">
+                    <header class="card-header has-background-primary">
+                        <p class="card-header-title has-text-white">
+                            DOMESTIC PRICING (PER ITEM)
+                        </p>
+                    </header>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="card-content">
+                                <div class="content">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+
+                                                <th>ITEM</th>
+
+                                                <th>PRICE(KSH)</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card-content">
+                                <div class="content">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+
+                                                <th>ITEM</th>
+
+                                                <th>PRICE(KSH)</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card ">
+                    <header class="card-header has-background-primary">
+                        <p class="card-header-title has-text-white">
+                            COMMERCIAL PRICING (PER ITEM)
+                        </p>
+                    </header>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="card-content">
+                                <div class="content">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+
+                                                <th>ITEM</th>
+
+                                                <th>PRICE(KSH)</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card-content">
+                                <div class="content">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+
+                                                <th>ITEM</th>
+
+                                                <th>PRICE(KSH)</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>38</td>
+                                                <td>23</td>
+
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="contacts" class="footer has-background-info">
+        <div class="columns  has-background-white ">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                    <li>
+                        <a href="#home">
+                            <span class="icon is-small">
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                            </span>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services">
+                            <span class="icon is-small">
+                                <i class="fas fa-cogs" aria-hidden="true"></i>
+                            </span>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pricing">
+                            <span class="icon is-small">
+                                <i class="fas fa-money-bill-alt" aria-hidden="true"></i>
+                            </span>
+                            <span>Pricing</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#contacts">
+                            <span class="icon is-small">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </span>
+                            <span>Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <div class="title has-text-justified">
+                    <h2> Opening hours</h2>
+
+                </div>
+                <div class="service has-text-justified has-text-white">
+                    <ul>
+                        <li>Monday-Friday : 8:00 am to 5:00 pm</li>
+                        <li>Saturday : 8:00 am to 3:00 Pm</li>
+                        <li>Sunday : Closed</li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--Services-->
+            <div class="column">
+                <div class="title has-text-justified">
+                    <h2> Services</h2>
+
+                </div>
+                <div class="service has-text-justified has-text-white">
+                    <ul>
+                        <li>Dry cleaning</li>
+                        <li>Wash&Fold</li>
+                        <li>Ironig/Press</li>
+                        <li>Repairs</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--Contacts-->
+            <div class="column">
+                <div class="title has-text-justified">
+                    <h2> Contacts</h2>
+
+                </div>
+                <div class="contact has-text-justified has-text-white">
+                    <ul>
+                        <li>
+                            <p><strong class="has-text-white">Phone:</strong> 070200000</p>
+                        </li>
+                        <li>
+                            <p><strong class="has-text-white"> Email:</strong> Laundry@gmail.com</p>
+                        </li>
+                        <li>
+                            <p><strong class="has-text-white"> Address</strong> Mama Ngina Street</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <hr class="has-background-white">
+                <h2 class="has-text-white">Follow us</h2>
+
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon is-small">
+                                    <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                                </span>
+                                <span class="has-text-white">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon is-small">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </span>
+                                <span class="has-text-white">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon is-small">
+                                    <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                                </span>
+                                <span class="has-text-white">Twitter</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <hr class="has-background-white">
+        <div class="columns has-text-centered">
+            <div class="column">
+                <div class="title">
+                    <h1 class="title has-text-white has-text-centered"> Credits
+
+                    </h1>
+                </div>
+
+                <div class="service has-text-justified has-text-white">
+                    <ul>
+                        <li>
+                            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik"
+                                    title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                                    title="Flaticon">www.flaticon.com</a></div>
+                        </li>
+                        <li>
+                            <div>Icons made by <a href="https://www.flaticon.com/authors/surang"
+                                    title="surang">surang</a> from <a href="https://www.flaticon.com/"
+                                    title="Flaticon">www.flaticon.com</a></div>
+                        </li>
+                        <li>
+                            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik"
+                                    title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                                    title="Flaticon">www.flaticon.com</a></div>
+                        </li>
+                        <li>
+                            <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp"
+                                    title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/"
+                                    title="Flaticon">www.flaticon.com</a></div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="column">
+                <p class="has-text-white">Designed by: <a class="has-text-link"
+                        href="https://blendeleganttechnologies.netlify.com/">John
+                        Kimani</a> &copy; 2020</p>
+            </div>
+            <div class="column"></div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var burger = document.querySelector('.burger');
+            var nav = document.querySelector('#' + burger.dataset.target);
+
+            burger.addEventListener('click', function () {
+                burger.classList.toggle('is-active');
+                nav.classList.toggle('is-active');
+            });
+        })();
+    </script>
+</body>
+
+</html>

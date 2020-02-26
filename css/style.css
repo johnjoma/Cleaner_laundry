@@ -1,0 +1,77 @@
+/* Css for Everything in Section-1*/
+
+.section-1 {
+    height: 95vmin;
+    margin-top: auto;
+    padding: 2px;
+    background-image: url('images/hanger.png');
+
+
+}
+
+
+.section-1 .intro {
+
+    margin-left: 10vmin;
+
+}
+
+.section-1 .intro {
+    margin-top: 40vmin;
+}
+
+.section-1 .hanger {
+    margin-bottom: 10vmin;
+}
+
+
+
+.section-1 .intro h1 {
+    font-size: 3rem;
+}
+
+
+
+
+/* Css for Everything in Section-2*/
+.section-2 {
+    margin-top: 5vmin;
+    padding: 2px;
+}
+
+.section-2 .title {
+    text-decoration: underline;
+    margin-top: 5vmin;
+}
+
+.section-2 columns {
+    margin: auto;
+
+}
+
+
+
+/* Css for Everything in Section-3*/
+.section-3 {
+    margin-top: 5vmin;
+    padding: 2px;
+}
+
+.section-3 .title {
+    text-decoration: underline;
+    margin-top: 5vmin;
+}
+
+.section-3 .card,
+.table {
+
+    background-color: rgba(167, 164, 164, 0.87);
+}
+
+
+/* Css for Everything in Footer*/
+
+footer {
+    margin-top: 5vmin;
+    padding: 10px;
+}
