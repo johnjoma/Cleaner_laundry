@@ -18,7 +18,7 @@
 
 .section-1 .intro {
 
-    margin-left: 7.5vmin;
+    margin-left: 8vmin;
 
 }
 
@@ -88,7 +88,7 @@
 /* Css for Everything in Section-2*/
 .section-2 {
     margin-top: 5vmin;
-    margin-left: 7.5vmin;
+    margin-left: 8vmin;
     padding: 2px;
 }
 
@@ -107,7 +107,7 @@
 /* Css for Everything in Section-3*/
 .section-3 {
     margin-top: 5vmin;
-    margin-left: 7.5vmin;
+    margin-left: 8vmin;
     padding: 2px;
 }
 
@@ -127,7 +127,7 @@
 
 footer {
     margin-top: 5vmin;
-    margin-left: 7.5vmin;
+    margin-left: 8vmin;
     padding: 10px;
     background: #2b5876;
     /* fallback for old browsers */
